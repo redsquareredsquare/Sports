@@ -1,3 +1,3 @@
-#Classifying Pitches Using Machine Learning
+Classifying Pitches Using Machine Learning
 
-###Overview
+Overview
