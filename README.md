@@ -1,3 +1,6 @@
-Classifying Pitches Using Machine Learning
+### Classifying Pitches Using Machine Learning
 
-Overview
+#### Overview
+Classifying pitches is now a common feature to enjoy when watching a baseball game by bradcasting. In this project, I tried to use some machine learning methods, including Decision Tree, Random Forest and Support Vector Machine to classify the pitches by feeding the model the pitching data of Major League Baseball from 04/01/2022-10/01/2022. The lable is for sure the pitch type while the features (x variables) of the models are the release speed of the pitch(release_speed), the spin rate of the pitch(release_spin_rate), the velocity of the pitch in different dimentions(vx0, vy0, vz0) and the acceleration of the pitch in different dimentions(ax, ay, az).
+
+I further test the model directly on specific player, like Shane Bieber, the former 2020 Cy Young Award winner to see how different models would perform classify his pitches. With Decision Tree and Random Forest, I got close results, with accuracy for each is 0.95 and 0.96. However, if to deep in more, decision tree model is more struggled to identify Bieber's changeups and cutter compare to other pitches since the F1 score for both of them are under 0.9. Cutter seems to be rlatively hard to identify for Random Forest Model too, cause all other pitches have F1 score higher than 93%, however it is only 0.9 for cutter. Support Vector Machine has the worst performance among all three models, with only 0.63 accuracy and the pitch it classify the best is changeup with F1 score of 0.78.
